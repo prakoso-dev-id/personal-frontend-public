@@ -12,10 +12,6 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Accept API URL as build argument (NEXT_PUBLIC_* vars are inlined at build time)
-ARG NEXT_PUBLIC_API_URL
-ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
-
 # Enable Next.js standalone output for Docker
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
