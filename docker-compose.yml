@@ -10,4 +10,9 @@ services:
     environment:
       - NODE_ENV=production
       - NEXT_TELEMETRY_DISABLED=1
+    networks:
+      - app-network
 
+networks:
+  app-network:
+    external: true
