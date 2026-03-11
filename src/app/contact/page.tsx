@@ -10,33 +10,21 @@ import type { ContactFormData } from "@/types";
 const SOCIAL_LINKS = [
     {
         label: "GitHub",
-        href: "https://github.com",
+        href: "https://github.com/prakoso-id",
         icon: Github,
         description: "Check out my code",
     },
     {
         label: "LinkedIn",
-        href: "https://linkedin.com",
+        href: "https://www.linkedin.com/in/robbyimamprakoso/",
         icon: Linkedin,
         description: "Let's connect",
     },
     {
-        label: "Twitter",
-        href: "https://twitter.com",
-        icon: Twitter,
-        description: "Follow me",
-    },
-    {
         label: "Email",
-        href: "mailto:hello@example.com",
+        href: "mailto:robbyimam31@gmail.com",
         icon: Mail,
         description: "Send me an email",
-    },
-    {
-        label: "Music",
-        href: "https://spotify.com",
-        icon: Music,
-        description: "Listen to my music",
     },
 ] as const;
 
